@@ -1,4 +1,19 @@
 {
   "extends": "modular-scripts/tsconfig.json",
-  "include": ["modular", "packages/**/src"]
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "noEmit": true,
+    "strict": true
+  },
+  "include": ["modular", "packages/**/src", "modular/setupTests.ts"]
 }

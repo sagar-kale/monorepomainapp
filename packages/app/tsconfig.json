@@ -1,3 +1,11 @@
 {
-  "extends": "..\\../tsconfig.json"
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",  // or "react" based on your React version
+    "baseUrl": "./",
+    "paths": {
+      "app1/App": ["src/app1.d.ts"]
+    }
+  },
+  "include": ["src"]
 }
